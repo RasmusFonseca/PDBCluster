@@ -30,19 +30,19 @@ Example of running k-centers for k=10:
  * Standard value for -clusteringType is distSum
  * Standard value for -clusters is 10
 
-"-clusteringType distSum" will perform standard k-medoids clustering where the
+`-clusteringType distSum` will perform standard k-medoids clustering where the
 cost associated with a set of medoids is the average distance from each member
 to its nearest medoid.
 
-"-clusteringType maxDistSum" will perform a variant of k-centers clustering
+`-clusteringType maxDistSum` will perform a variant of k-centers clustering
 where the cost associated with a set of medoids is the average distance from
 each medoid to its furthest associated member.
 
-"-clusteringType maxDist" will perform k-centers clustering where the cost
+`-clusteringType maxDist` will perform k-centers clustering where the cost
 associated with a set of medoids is the largest distance from any site to the
 nearest medoid.
 
 For all clustering types, the dRMSD metric is used to indicate the distance
-between two structures. If -dumpDistances is specified no clustering is
+between two structures. If `-dumpDistances` is specified no clustering is
 performed, the structure dRMSD distance matrix is just written to the specified
 file.
